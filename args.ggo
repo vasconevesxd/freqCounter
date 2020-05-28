@@ -1,0 +1,13 @@
+package "FreqCounter"
+version "1.0"
+purpose "Daniel Carreira  N 2191215\nVasco Neves      N 2191752\n\nThis program counts the number of times that each segment of 1 byte or 2 bytes or 4 bytes is repeated over a file"
+
+# Options
+option "file" f "Processes the files indicated in the list" string typestr="filename" multiple optional
+option "compact" c "Processes the files, producing the result in compact mode" optional #string typestr="filename" argoptional multiple
+option "dir" d "Processes all regular files in the directory" string typestr="dirname" optional
+option "discrete" - "Shows only the count of the values indicated in the list of values" string multiple optional
+option "mode" m "How the files will be read - 1 byte, 2 bytes or 4 bytes segments" int optional
+option "output" o "Results are written to the file" string typestr="filename" optional
+option "search" s "Indicates all occurrences of the pattern" string optional
+option "time" - "Indicates the execution time in seconds" optional
